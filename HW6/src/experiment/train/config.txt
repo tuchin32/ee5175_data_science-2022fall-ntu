@@ -1,0 +1,27 @@
+2022-12-22-12:03:18
+
+gpus: [0]
+src_data_path: ../digit/train
+src_label_path: ../digit/train.csv
+output_file: experiment/train5/output5.csv
+job_dir: experiment/train5/
+pretrained: False
+inference_only: False
+source_dir: pretrained/
+source_file: model_best.pt
+reset: False
+resume: None
+refine: None
+arch: cnn
+model: ResNet18
+num_epochs: 50
+train_batch_size: 256
+eval_batch_size: 256
+momentum: 0.95
+lr: 0.001
+lr_gamma: 0.911
+lr_decay_step: 1
+weight_decay: 0.0005
+print_freq: 500
+test_only: False
+
